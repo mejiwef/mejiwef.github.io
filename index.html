@@ -1416,7 +1416,7 @@
                 
               
 
-              <time title="创建时间：2018-10-14 10:54:25 / 修改时间：13:41:18" itemprop="dateCreated datePublished" datetime="2018-10-14T10:54:25+08:00">2018-10-14</time>
+              <time title="创建时间：2018-10-14 10:54:25 / 修改时间：17:22:30" itemprop="dateCreated datePublished" datetime="2018-10-14T10:54:25+08:00">2018-10-14</time>
             
 
             
@@ -1455,10 +1455,14 @@
 
       
         
-          
-            <h2 id="获取表的元数据"><a href="#获取表的元数据" class="headerlink" title="获取表的元数据"></a>获取表的元数据</h2><p>元数据概念：<br>和数据库服务器相关的数据，比如数据库版本，有哪些表，表有哪些字段，字段类型是什么等等。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> cn.vifeng.util.DBUtil;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.sql.Connection;</span><br><span class="line"><span class="keyword">import</span> java.sql.DatabaseMetaData;</span><br><span class="line"><span class="keyword">import</span> java.sql.ResultSet;</span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">        <span class="comment">//获得数据库连接</span></span><br><span class="line">        Connection conn = DBUtil.getConnection();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 查看数据库层面的元数据，即数据库服务器版本，驱动版本，都有哪些数据库等等</span></span><br><span class="line">        DatabaseMetaData dmd = conn.getMetaData();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取数据库服务器产品名称</span></span><br><span class="line">        System.out.println(<span class="string">"数据库产品名称:\t"</span> + dmd.getDatabaseProductName());</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取数据库服务器产品版本号</span></span><br><span class="line">        System.out.println(<span class="string">"数据库产品版本:\t"</span> + dmd.getDatabaseProductVersion());</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取数据库服务器用作类别和表名之间的分隔符 如test.user</span></span><br><span class="line">        System.out.println(<span class="string">"数据库和表分隔符:\t"</span> + dmd.getCatalogSeparator());</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取驱动版本</span></span><br><span class="line">        System.out.println(<span class="string">"驱动版本:\t"</span> + dmd.getDriverVersion());</span><br><span class="line">        System.out.println(<span class="string">"可用的数据库列表："</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取所有数据库名称</span></span><br><span class="line">        ResultSet rs = dmd.getCatalogs();</span><br><span class="line">        <span class="keyword">while</span> (rs.next()) &#123;</span><br><span class="line">            System.out.println(<span class="string">"数据库名称:\t"</span> + rs.getString(<span class="number">1</span>));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
-          
+          <h2 id="获取表的元数据"><a href="#获取表的元数据" class="headerlink" title="获取表的元数据"></a>获取表的元数据</h2><p>元数据概念：<br>和数据库服务器相关的数据，比如数据库版本，有哪些表，表有哪些字段，字段类型是什么等等。<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/post/acab83dd.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
