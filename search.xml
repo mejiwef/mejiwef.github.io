@@ -19,7 +19,7 @@
   <entry>
     <title><![CDATA[MyBatis]]></title>
     <url>%2Fpost%2F1bff3c65.html</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[MyBatis使用 导入MyBatis的jar包 配置mybatis-config.xml 配置ObjectMapper.xml并注册到mybatis-config.xml中（ORM，映射SQL） 从mybatis-config.xml构建SqlSessionFactory 从SqlSessionFactory中获取 SqlSession 通过SqlSession实例来直接执行已映射的 SQL 语句]]></content>
       <tags>
         <tag>Framework</tag>
         <tag>MyBatis</tag>
