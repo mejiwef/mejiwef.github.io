@@ -1,8 +1,8 @@
 ## 一、基础篇
 ### 1.1、Java基础
 - [面向对象的特征：继承、封装和多态](1.1.1.md)
-- final, finally, finalize 的区别
-- Exception、Error、运行时异常与一般异常有何异同
+- [final, finally, finalize 的区别](1.1.2.md)
+- [Exception、Error、运行时异常与一般异常有何异同](1.1.3.md)
 - 请写出5种常见到的runtime exception
 - int 和 Integer 有什么区别，Integer的值缓存范围
 - 包装类，装箱和拆箱
