@@ -3,7 +3,7 @@
 - [面向对象的特征：继承、封装和多态](基础篇/1.1、Java基础/1.1.1.md)
 - [final, finally, finalize 的区别](基础篇/1.1、Java基础/1.1.2.md)
 - [Exception、Error、运行时异常与一般异常有何异同](基础篇/1.1、Java基础/1.1.3.md)
-- 请写出5种常见到的runtime exception
+- [请写出5种常见到的runtime exception](基础篇/1.1、Java基础/1.1.4.md)
 - int 和 Integer 有什么区别，Integer的值缓存范围
 - 包装类，装箱和拆箱
 - String、StringBuilder、StringBuffer
