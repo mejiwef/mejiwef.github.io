@@ -6,7 +6,7 @@
 - [请写出5种常见到的runtime exception](基础篇/1.1、Java基础/1.1.4.md)
 - [int 和 Integer 有什么区别，Integer的值缓存范围](基础篇/1.1、Java基础/1.1.5.md)
 - [包装类，装箱和拆箱](基础篇/1.1、Java基础/1.1.6.md)
-- String、StringBuilder、StringBuffer
+- [String、StringBuilder、StringBuffer](基础篇/1.1、Java基础/1.1.7.md)
 - 重载和重写的区别
 - 抽象类和接口有什么区别
 - 说说反射的用途及实现
