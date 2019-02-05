@@ -24,19 +24,19 @@
 - [Java 8的新特性](https://www.cnblogs.com/pkufork/p/java_8.html)
 - [Java 11的新特性](https://www.jianshu.com/p/ae60abb6752d)
 ### 1.2、Java常见集合
-- List 和 Set 区别
-- Set和hashCode以及equals方法的联系
-- List 和 Map 区别
-- Arraylist 与 LinkedList 区别
-- ArrayList 与 Vector 区别
-- HashMap 和 Hashtable 的区别
-- HashSet 和 HashMap 区别
-- HashMap 和 ConcurrentHashMap 的区别
-- HashMap 的工作原理及代码实现，什么时候用到红黑树
-- 多线程情况下HashMap死循环的问题
-- HashMap出现Hash DOS攻击的问题
-- ConcurrentHashMap 的工作原理及代码实现，如何统计所有的元素个数
-- 手写简单的HashMap
+- [List、Set、Map 和 Queue 之间的区别](https://www.cnblogs.com/goody9807/p/6431501.html)
+- [Set集合中的hashcode方法与equals方法](https://www.jianshu.com/p/48d6548e6ad3)
+- [Arraylist 与 LinkedList 区别](https://www.cnblogs.com/sierrajuan/p/3639353.html)
+- [ArrayList 与 Vector 区别](https://www.cnblogs.com/rnmb/p/6553711.html)
+- [HashMap 和 Hashtable 的区别](https://www.cnblogs.com/williamjie/p/9099141.html)
+- [HashSet 和 HashMap 区别](https://www.cnblogs.com/wangying222/p/5530931.html)
+- [HashMap 和 ConcurrentHashMap 的区别](https://www.cnblogs.com/signheart/p/21d463eebb54f3e9139da3d43ee7bfda.html)
+- [HashMap 实现原理及源码分析](https://www.cnblogs.com/chengxiao/p/6059914.html)
+- [HashMap 分析之红黑树树化过程](https://www.cnblogs.com/finite/p/8251587.html)
+- [多线程情况下HashMap死循环的问题](https://www.jianshu.com/p/1e9cf0ac07f4)
+- [HashMap出现Hash DOS攻击的问题](https://www.freebuf.com/articles/web/14199.html)
+- [ConcurrentHashMap 的工作原理及代码实现，如何统计所有的元素个数](https://www.cnblogs.com/chengxiao/p/6842045.html)
+- [手写简单的HashMap](https://www.cnblogs.com/vitalq/p/9615659.html)
 - 看过那些Java集合类的源码
 ### 1.3、进程和线程
 - 线程和进程的概念、并行和并发的概念
