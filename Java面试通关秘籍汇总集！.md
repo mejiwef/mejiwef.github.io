@@ -15,13 +15,14 @@
 - [Cookie、Session、Token那点事儿](基础篇/1.1、Java基础/1.1.13.md)
 - [JDK 中常用的包](基础篇/1.1、Java基础/1.1.14.md)
 - [MVC设计思想](https://www.cnblogs.com/xhj123/p/6170975.html)
-- equals与==的区别
-- hashCode和equals方法的区别与联系
-- 什么是Java序列化和反序列化，如何实现Java序列化？或者请解释Serializable 接口的作用
-- Object类中常见的方法，为什么wait  notify会放在Object里边？
-- Java的平台无关性如何体现出来的
-- JDK和JRE的区别
-- Java 8有哪些新特性
+- [equals与==的区别](https://www.cnblogs.com/dolphin0520/p/3592500.html)
+- [hashCode和equals方法的区别与联系](https://www.cnblogs.com/keyi/p/7119825.html)
+- [什么是Java序列化和反序列化，如何实现Java序列化？或者请解释Serializable 接口的作用](https://www.cnblogs.com/xdp-gacl/p/3777987.html)
+- [Object类中常见的方法，为什么wait notify会放在Object里边？](https://www.cnblogs.com/wxywxy/p/6740277.html)
+- [Java的平台无关性如何体现出来的](http://www.cnblogs.com/Y/archive/2011/03/22/JavaVM_Learning_Chapter2_Platform_Independence.html)
+- [JDK、JRE、JVM三者间的关系](https://www.cnblogs.com/bolang100/p/6929514.html)
+- [Java 8的新特性](https://www.cnblogs.com/pkufork/p/java_8.html)
+- [Java 11的新特性](https://www.jianshu.com/p/ae60abb6752d)
 ### 1.2、Java常见集合
 - List 和 Set 区别
 - Set和hashCode以及equals方法的联系
