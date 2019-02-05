@@ -37,11 +37,11 @@
 - [HashMap出现Hash DOS攻击的问题](https://www.freebuf.com/articles/web/14199.html)
 - [ConcurrentHashMap 的工作原理及代码实现，如何统计所有的元素个数](https://www.cnblogs.com/chengxiao/p/6842045.html)
 - [手写简单的HashMap](https://www.cnblogs.com/vitalq/p/9615659.html)
-- 看过那些Java集合类的源码
+- [看过那些Java集合类的源码](https://www.cnblogs.com/java-zhao/category/774768.html)
 ### 1.3、进程和线程
-- 线程和进程的概念、并行和并发的概念
-- 创建线程的方式及实现
-- 进程间通信的方式
+- [线程和进程的概念、并行和并发的概念](https://www.cnblogs.com/forzheng/p/8280925.html)
+- [创建线程的方式及实现](https://www.cnblogs.com/dolphin0520/p/3913517.html)
+- [进程间通信的方式](基础篇/1.3、进程和线程/1.3.3.md)
 - 说说 CountDownLatch、CyclicBarrier 原理和区别
 - 说说 Semaphore 原理
 - 说说 Exchanger 原理
