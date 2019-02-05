@@ -14,7 +14,7 @@
 - [HTTP请求的GET与POST方式的区别](基础篇/1.1、Java基础/1.1.12.md)
 - [Cookie、Session、Token那点事儿](基础篇/1.1、Java基础/1.1.13.md)
 - [JDK 中常用的包](基础篇/1.1、Java基础/1.1.14.md)
-- MVC设计思想
+- [MVC设计思想](https://www.cnblogs.com/xhj123/p/6170975.html)
 - equals与==的区别
 - hashCode和equals方法的区别与联系
 - 什么是Java序列化和反序列化，如何实现Java序列化？或者请解释Serializable 接口的作用
