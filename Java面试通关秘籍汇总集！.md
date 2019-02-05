@@ -40,15 +40,15 @@
 - [看过那些Java集合类的源码](https://www.cnblogs.com/java-zhao/category/774768.html)
 ### 1.3、进程和线程
 - [线程和进程的概念、并行和并发的概念](https://www.cnblogs.com/forzheng/p/8280925.html)
-- [创建线程的方式及实现](https://www.cnblogs.com/dolphin0520/p/3913517.html)
+- [创建线程的方式及实现](https://www.cnblogs.com/felixzh/p/6036074.html)
 - [进程间通信的方式](基础篇/1.3、进程和线程/1.3.3.md)
-- 说说 CountDownLatch、CyclicBarrier 原理和区别
-- 说说 Semaphore 原理
-- 说说 Exchanger 原理
-- ThreadLocal 原理分析，ThreadLocal为什么会出现OOM，出现的深层次原理
-- 讲讲线程池的实现原理
-- 线程池的几种实现方式
-- 线程的生命周期，状态是如何转移的
+- [说说 CountDownLatch、CyclicBarrier 原理和区别](https://www.cnblogs.com/xiaorenwu702/p/3977833.html)
+- [说说 Semaphore 原理](https://www.cnblogs.com/nullzx/p/5270233.html)
+- [说说 Exchanger 原理](https://www.cnblogs.com/davidwang456/p/4179488.html)
+- [ThreadLocal 原理分析，ThreadLocal为什么会出现OOM，出现的深层次原理](https://www.cnblogs.com/dolphin0520/p/3920407.html)
+- [讲讲线程池的实现原理](https://www.cnblogs.com/dongguacai/p/6030187.html)
+- [线程池的几种实现方式](https://www.cnblogs.com/mokafamily/p/3558886.html)
+- [线程的生命周期，状态是如何转移的](https://www.cnblogs.com/sunddenly/p/4106562.html)
 - 可参考：《Java多线程编程核心技术》
 ### 1.4、锁机制
 - 说说线程安全问题，什么是线程安全，如何保证线程安全
@@ -100,7 +100,7 @@
 - Http1.0和2.0相比有什么区别，可参考《Http 2.0》
 - Https的基本概念
 - 三次握手和四次挥手、为什么挥手需要四次
-- 从游览器中输入URL到页面加载的发生了什么？可参考《从输入URL到页面加载发生了什么》
+- 从浏览器中输入URL到页面加载的发生了什么？可参考《从输入URL到页面加载发生了什么》
 ## 二、数据存储和消息队列
 ### 2.1、数据库
 - MySQL 索引使用的注意事项
