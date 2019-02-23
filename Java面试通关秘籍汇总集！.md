@@ -146,20 +146,20 @@
 - 如何保证消息的有序性
 ## 三、开源框架和容器
 ### 3.1、SSM/Servlet
-- Servlet的生命周期
-- 转发与重定向的区别
-- BeanFactory 和 ApplicationContext 有什么区别
-- Spring Bean 的生命周期
-- Spring IOC 如何实现
-- Spring中Bean的作用域，默认的是哪一个
-- 说说 Spring AOP、Spring AOP 实现原理
-- 动态代理（CGLib 与 JDK）、优缺点、性能对比、如何选择
-- Spring 事务实现方式、事务的传播机制、默认的事务类别
-- Spring 事务底层原理
-- Spring事务失效（事务嵌套），JDK动态代理给Spring事务埋下的坑，可参考《JDK动态代理给Spring事务埋下的坑！》
-- 如何自定义注解实现功能
-- Spring MVC 运行流程
-- Spring MVC 启动流程
+- [Servlet的生命周期](https://www.cnblogs.com/lgk8023/p/6427977.html)
+- [请求转发与重定向的区别](https://www.cnblogs.com/shaoxiaohuan/p/7660979.html)
+- [BeanFactory 和 ApplicationContext 有什么区别](https://www.cnblogs.com/adealjason/p/6500916.html)
+- [Spring Bean 的生命周期](https://www.cnblogs.com/zrtqsk/p/3735273.html)
+- [Spring IOC 如何实现](https://www.cnblogs.com/best/p/5727935.html)
+- [Spring中Bean的作用域，默认的是哪一个](https://www.cnblogs.com/zhanglei93/p/6231882.html)
+- [说说 Spring AOP、Spring AOP 实现原理](https://www.cnblogs.com/chenjunping/p/6664454.html)
+- [动态代理（CGLib 与 JDK）、优缺点、性能对比、如何选择](https://www.cnblogs.com/leifei/p/8263448.html)
+- [Spring 事务实现方式、事务的传播机制、默认的事务类别](https://www.cnblogs.com/ysocean/p/7617620.html)
+- [Spring 事务底层原理](http://www.codeceo.com/article/spring-transactions.html)
+- [Spring事务失效（事务嵌套），JDK动态代理给Spring事务埋下的坑](https://www.cnblogs.com/jiuya/p/9951048.html)
+- [如何自定义注解实现功能](https://www.cnblogs.com/liangweiping/p/3837332.html)
+- [Spring MVC 运行流程](https://www.cnblogs.com/jiyukai/p/7629498.html)
+- [Spring MVC 启动流程](https://www.jianshu.com/p/dc64d02e49ac)
 - Spring 的单例实现原理
 - Spring 框架中用到了哪些设计模式
 - Spring 其他产品（Srping Boot、Spring Cloud、Spring Secuirity、Spring Data、Spring AMQP 等）
