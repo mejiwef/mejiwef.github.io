@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CS学科轮动</title>
+    <style type="text/css">
+        /*标题样式*/
+        p {
+            text-align: center;
+            font-size: 25px;
+            color: cadetblue;
+            font-family: fantasy;
+
+        }
+
+        .imgBox {
+            border-top: 2px solid cadetblue;
+            width: 70%;
+            height: 900px;
+            margin: 0 auto;
+
+        }
+
+        .imgBox img {
+            width: 55%;
+            height: 550px;
+            margin: 0 auto;
+            padding-top: 30px;
+
+        }
+
+        .img1 {
+            display: block;
+        }
+
+        .img2 {
+            display: none;
+        }
+
+        .img3 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="lesson-name">60分万岁！</p>
+    <div class="imgBox">
+        <img class="img-slide img1" src="books/0.png" alt="1">
+        <img class="img-slide img1" src="books/1.jpg" alt="2">
+        <img class="img-slide img1" src="books/2.png" alt="3">
+        <img class="img-slide img1" src="books/3.jpg" alt="4">
+    </div>
+</body>
+<script type="text/javascript">
+    var index = -1;
+    var lessons = ["计算机网络", "微机原理与汇编语言", "离散数学", "算法与数据结构"];
+    var lesson_name = document.getElementById("lesson-name");
+    function ChangeImg() {
+        index++;
+        var a = document.getElementsByClassName("img-slide");
+        if (index >= a.length) index = 0;
+        for (var i = 0; i < a.length; i++) {
+            a[i].style.display = 'none';
+        }
+        a[index].style.display = 'block';
+        lesson_name.innerText = lessons[index];
+    }
+
+
+    //手动切换
+    ChangeImg();
+    lesson_name.addEventListener('click', ChangeImg, false);
+
+</script>
+
+</html>
