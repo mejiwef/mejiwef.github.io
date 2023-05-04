@@ -1,78 +1,88 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <title>CS学科轮动</title>
-    <style type="text/css">
-        /*标题样式*/
-        p {
-            text-align: center;
-            font-size: 25px;
-            color: cadetblue;
-            font-family: fantasy;
-
+    <title>开仓计算器</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
         }
-
-        .imgBox {
-            border-top: 2px solid cadetblue;
-            width: 70%;
-            height: 900px;
-            margin: 0 auto;
-
-        }
-
-        .imgBox img {
-            width: 55%;
-            height: 550px;
-            margin: 0 auto;
-            padding-top: 30px;
-
-        }
-
-        .img1 {
-            display: block;
-        }
-
-        .img2 {
-            display: none;
-        }
-
-        .img3 {
-            display: none;
+        form {
+            flex-direction: column;
+            align-items: center;
         }
     </style>
 </head>
 
 <body>
-    <p id="lesson-name">60分万岁！</p>
-    <div class="imgBox">
-        <img class="img-slide img1" src="books/0.png" alt="1">
-        <img class="img-slide img1" src="books/1.jpg" alt="2">
-        <img class="img-slide img1" src="books/2.png" alt="3">
-        <img class="img-slide img1" src="books/3.jpg" alt="4">
-    </div>
-</body>
-<script type="text/javascript">
-    var index = -1;
-    var lessons = ["计算机网络", "微机原理与汇编语言", "离散数学", "算法与数据结构"];
-    var lesson_name = document.getElementById("lesson-name");
-    function ChangeImg() {
-        index++;
-        var a = document.getElementsByClassName("img-slide");
-        if (index >= a.length) index = 0;
-        for (var i = 0; i < a.length; i++) {
-            a[i].style.display = 'none';
+    <form>
+        <h1>开仓计算器</h1>
+        <label for="direction">大方向：</label>
+        <label><input type="radio" name="direction" value="call">开多</label>
+        <label><input type="radio" name="direction" value="put">开空</label><br><br>
+
+        <label for="open">开仓价格：</label>
+        <input type="number" id="open" required><br><br>
+
+        <label for="target_close">目标价格：</label>
+        <input type="number" id="target_close" required><br><br>
+
+        <label for="loss_close">止损价格：</label>
+        <input type="number" id="loss_close" required><br><br>
+
+        <label for="cycle">开仓周期：</label>
+        <label><input type="radio" name="cycle" value="0">大周期</label>
+        <label><input type="radio" name="cycle" value="1">中周期</label>
+        <label><input type="radio" name="cycle" value="2">小周期</label><br><br>
+
+        <label for="probability">实现概率：</label>
+        <label><input type="radio" name="probability" value="0">大概率</label>
+        <label><input type="radio" name="probability" value="1">中概率</label>
+        <label><input type="radio" name="probability" value="2">小概率</label><br><br>
+
+        <button type="button" onclick="calculate()" style="width:260px; height:42px;">计算仓位</button><br><br>
+
+        <label for="result">盈亏比：</label>
+        <input type="text" id="result" disabled><br><br>
+
+        <label for="position">合理仓位：</label>
+        <input type="text" id="position" disabled>
+    </form>
+
+    <script>
+        function calculate() {
+            var direction = document.querySelector('input[name="direction"]:checked').value;
+            var openPrice = Number(document.getElementById('open').value);
+            var targetPrice = Number(document.getElementById('target_close').value);
+            var lossPrice = Number(document.getElementById('loss_close').value);
+            var cycle = Number(document.querySelector('input[name="cycle"]:checked').value);
+            var probability = Number(document.querySelector('input[name="probability"]:checked').value);
+
+            var profit = targetPrice - openPrice;
+            var loss = openPrice - lossPrice;
+            var riskRewardRatio = profit / loss;
+
+            if (direction === "put") {
+                riskRewardRatio = -riskRewardRatio;
+            }
+
+            document.getElementById('result').value = riskRewardRatio.toFixed(2);
+
+            const arr = [
+                [0.1, 0.075, 0.05],
+                [0.075, 0.05, 0.025],
+                [0.05, 0.025, 0.01]
+            ];
+
+            if (riskRewardRatio < 3) {
+                document.getElementById('position').value = "盈亏比不适合开仓";
+            } else {
+                document.getElementById('position').value = (arr[cycle][probability] * 100) + "%";
+            }
         }
-        a[index].style.display = 'block';
-        lesson_name.innerText = lessons[index];
-    }
-
-
-    //手动切换
-    ChangeImg();
-    lesson_name.addEventListener('click', ChangeImg, false);
-
-</script>
+    </script>
+</body>
 
 </html>
